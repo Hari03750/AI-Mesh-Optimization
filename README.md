@@ -16,7 +16,7 @@ This project implements an AI-driven 3D mesh optimization pipeline that performs
 | Resource | Link |
 |---------|------|
 | **GitHub Repository** | https://github.com/Hari03750/AI-Mesh-Optimization |
-| **Final Report (PDF)** | [Download Final Project Report](sandbox:/mnt/data/Final_AI_Mesh_Optimization_Report.pdf) |
+| **Final Report (PDF)** | [Download Final Project Report](sandbox:/mnt/data/Final_Report.pdf) |
 
 ---
 
