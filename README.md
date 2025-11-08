@@ -9,7 +9,14 @@ This project implements an AI-driven 3D mesh optimization pipeline that performs
 - Mesh Reconstruction  
 - Error Measurement Using Mean Squared Error (MSE)
 
-The goal is to compare how different normalization methods affect the fidelity of 3D mesh reconstruction.
+---
+
+## 🔗 Project Links
+
+| Resource | Link |
+|---------|------|
+| **GitHub Repository** | https://github.com/Hari03750/AI-Mesh-Optimization |
+| **Final Report (PDF)** | [Download Final Project Report](sandbox:/mnt/data/Final_AI_Mesh_Optimization_Report.pdf) |
 
 ---
 
@@ -27,56 +34,56 @@ The goal is to compare how different normalization methods affect the fidelity o
 ## 🗂️ Project Structure
 AI-Mesh-Optimization/
 │
-├── data/ # Sample input 3D mesh models
+├── data/
 │ └── cube.obj
 │
-├── scripts/ # Core project scripts
-│ ├── load_inspect.py # Mesh inspection & statistical analysis
-│ ├── normalize_quantize.py # Normalization + quantization pipeline
-│ ├── reconstruct_error.py # Reconstruction & MSE computation
+├── scripts/
+│ ├── load_inspect.py
+│ ├── normalize_quantize.py
+│ ├── reconstruct_error.py
 │
-├── scripts/outputs/ # Reconstructed meshes (auto generated)
+├── scripts/outputs/
 │ ├── reconstructed_min_max.ply
 │ └── reconstructed_unit_sphere.ply
 │
-├── scripts/figures/ # Error visualization graphs (auto generated)
+├── scripts/figures/
 │ ├── mse_per_axis.png
 │ └── error_histogram.png
 │
 ├── outputs/
-│ └── Final_Report.pdf # Final submission-ready project report
+│ └── Final_Report.pdf
 │
-└── README.md # Project documentation
-
+└── README.md
 
 ---
 
-## ⚙️ How to Run
+## 📊 Results Summary
 
-### 1. Install Dependencies
-```bash
-pip install numpy trimesh reportlab
-python scripts/load_inspect.py data/cube.obj
-python scripts/normalize_quantize.py data/cube.obj outputs/
-python scripts/reconstruct_error.py data/cube.obj outputs/reconstructed_min_max.ply
-python scripts/reconstruct_error.py data/cube.obj outputs/reconstructed_unit_sphere.ply
+| Normalization Method | Overall MSE (Lower = Better) |
+|---------------------|-----------------------------|
+| **Min–Max**         | **1.12500000** |
+| **Unit-Sphere**     | **2.35048110** |
 
-📊 Results Summary
-Normalization Method	Overall MSE (Lower = Better)
-Min–Max	1.12500000
-Unit-Sphere	2.35048110
+➡ **Min–Max normalization provides better reconstruction accuracy** for this model.
 
-➡ Conclusion: Min–Max normalization gives better reconstruction accuracy for this mesh.
+---
 
-👤 Author
+## 👤 Author
+**Hariharan B**  
+Register No: **RA2211004040028**  
+**SRM Institute of Science and Technology**  
+Department of **Electronics and Communication Engineering**
 
-Hariharan B
-Register No: RA2211004040028
-SRM Institute of Science and Technology
-Department of Electronics and Communication Engineering
+---
 
-⭐ Status
+## ✅ Status
+| Item | Status |
+|------|--------|
+| Project Code | ✔️ Completed |
+| Error Graphs | ✔️ Generated |
+| Comparison Analysis | ✔️ Included |
+| Final Report | ✔️ Ready to Submit |
 
-✅ Project Completed
+
 ✅ Report Generated
 ✅ Ready for Submission
